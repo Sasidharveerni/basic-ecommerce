@@ -9,16 +9,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repo
+    - name: Checkout Repository
       uses: actions/checkout@v3
 
-    - name: Docker Compose Build
+    - name: Build Docker Images
       run: docker-compose build
 
-    - name: Docker Compose Up (Test)
+    - name: Start Docker Containers
       run: docker-compose up -d
 
-    - name: Test Backend API
+    - name: Wait for Backend to be Ready
       run: |
-        sleep 10
-        curl http://localhost:5000/flask/recommend || echo "Backend not responding"
+        echo "Waiting for backend..."
+        for i in {1..10}; do
+          curl http://localhost:5000/flask/recommend && break
+          echo "Retry $i: Backend not ready yet..."
+          sleep 5
+        done
+
+    - name: Show Running Containers (Debug)
+      run: docker ps
+
+    - name: Stop Docker Containers
+      run: docker-compose down
