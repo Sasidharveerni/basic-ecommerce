@@ -20,7 +20,8 @@ Welcome to **ShopFast**, a modern e-commerce interface powered by **React (Vite)
 
 | Search Products                         | Recommendations                          |
 |----------------------------------------|------------------------------------------|
-| ![Search Screenshot](assets/search.png) | ![Recommendation Screenshot](assets/recommend.png) |
+| ![Screenshot (30)](https://github.com/user-attachments/assets/8d6dc4c8-eefb-468a-ad41-d78fa4ebd547) |
+| ![image](https://github.com/user-attachments/assets/96fd0963-11e7-4103-998f-6a1590f20a99) |
 
 ---
 
@@ -38,8 +39,8 @@ Welcome to **ShopFast**, a modern e-commerce interface powered by **React (Vite)
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/yourusername/glowup-store.git
-cd glowup-store
+git clone https://github.com/Sasidharveerni/basic-ecommerce.git
+cd basic-ecommerce
 ```
 
 ---
@@ -72,7 +73,7 @@ npm run dev
 ### Backend (Flask)
 
 ```bash
-cd backend
+cd ml-model
 # Create virtual env (optional)
 pip install -r requirements.txt
 python app.py
@@ -128,4 +129,4 @@ Want to add features or fix bugs?
 ## 📧 Contact
 
 Made with ❤️ by [Sasidhar](https://github.com/Sasidharveerni)  
-Let’s connect on [LinkedIn](https://linkedin.com/in/yourprofile)
+Let’s connect on [LinkedIn](https://www.linkedin.com/in/sasidhar-v-386803275/)
