@@ -1,8 +1,3 @@
-Sure! Here's a **beautifully crafted `README.md`** for your full-stack project (Vite + Flask + Product Recommendation) with sections for features, setup (Docker + Non-Docker), CI/CD, and deployment.
-
-Let me know if you'd like to tweak anything or add badges!
-
----
 
 # 🌟 ShopFast – Product Recommendation App
 
